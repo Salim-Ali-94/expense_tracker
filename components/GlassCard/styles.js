@@ -53,6 +53,11 @@ export const styles = StyleSheet.create({
     expenseBox: {
 
         flex: 0.6
+    },
+
+    profitBox: {
+
+        flex: 0.69
     }
 
 });
