@@ -23,7 +23,7 @@ jobs:
           node-version: 18.15.0
 
       - name: Install dependencies required to run the project on another computer
-        run: npm install
+        run: npm install --force
 
       - name: Run test scripts
         run: npm run test
@@ -45,7 +45,7 @@ jobs:
           node-version: 18.15.0
 
       - name: Install all dependencies required for running the mobile app on the server
-        run: npm install
+        run: npm install --force
 
       - name: Run lint checks on all react.js project files
         run: npm run lint
@@ -69,7 +69,7 @@ jobs:
       - name: Install dependencies required for running the web app and security scans on the server
         run: |
 
-          npm install
+          npm install --force
           npm install snyk -g
           snyk auth ${{ secrets.SNYK_AUTH_TOKEN }}
 
@@ -93,7 +93,7 @@ jobs:
   #         node-version: 18.15.0
 
   #     - name: Install dependencies required for running the web app on Github host machine
-  #       run: npm install
+  #       run: npm install --force
 
   #     - name: Build the project
   #       run: npm run build
