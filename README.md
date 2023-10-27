@@ -10,5 +10,5 @@ expense tracker app built using react native (cli)
 
 - glass/blur effect
 - linear gradient
-- component positioning
+- component positioning + transformation
 - donut chart
