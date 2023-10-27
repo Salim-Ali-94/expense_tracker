@@ -2,6 +2,7 @@ import { SafeAreaView, View, StatusBar, ScrollView } from "react-native";
 import * as constants from "./constants";
 import GlassCard from "./components/GlassCard";
 import GradientCard from "./components/GradientCard";
+import DonutChart from "./components/DonutChart";
 import { styles } from "./styles";
 
 
@@ -9,11 +10,11 @@ export default function App() {
 
   return (
 
-    <SafeAreaView style = {{ backgroundColor: constants.dark, flex: 1 }}>
+    <SafeAreaView style = {{ backgroundColor: constants.lunar, flex: 1 }}>
 
       <ScrollView>
 
-        <StatusBar backgroundColor={constants.dark}
+        <StatusBar backgroundColor={constants.lunar}
                    barStyle="light-content" />
 
         <View style={styles.cardSection}>
@@ -25,6 +26,8 @@ export default function App() {
           <GradientCard />
 
         </View>
+
+        <DonutChart data={[40, 90, 27]} />
 
       </ScrollView>
 
