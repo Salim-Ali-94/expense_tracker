@@ -8,6 +8,14 @@ export const styles = StyleSheet.create({
         marginTop: 100,
         marginBottom: 20,
         alignItems: "center"
+    },
+
+    carousel: {
+
+        flexDirection: "row",
+        width: "100%",
+        justifyContent: "space-around",
+        marginTop: 30
     }
 
 });
