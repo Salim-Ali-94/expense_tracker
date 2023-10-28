@@ -1,4 +1,4 @@
-import { SafeAreaView, View, StatusBar, ScrollView } from "react-native";
+import { SafeAreaView, Image, Text, View, StatusBar, ScrollView } from "react-native";
 import * as constants from "./constants";
 import GlassCard from "./components/GlassCard";
 import GradientCard from "./components/GradientCard";
@@ -13,12 +13,29 @@ export default function App() {
 
     <SafeAreaView style = {{ backgroundColor: constants.lunar, flex: 1 }}>
 
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
 
         <StatusBar backgroundColor={constants.lunar}
                    barStyle="light-content" />
 
-        <ScrollView horizontal={true}>
+        <View style={styles.header}>
+
+          <View style={styles.row}>
+
+            <Text style={styles.greeting}>Hello, Salim</Text>
+
+            <View style={styles.profile}>
+
+              <Image source={require("./assets/icons/profile.jpg")} style={styles.img} />
+
+            </View>
+
+          </View>
+
+        </View>
+
+        <ScrollView horizontal={true}
+                    showsHorizontalScrollIndicator={false}>
 
           <View style={styles.carousel}>
 
