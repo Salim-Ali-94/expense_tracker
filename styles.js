@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     carousel: {
 
         flexDirection: "row",
-        width: "100%",
+        width: "115%",
         justifyContent: "space-around",
         marginTop: 30
     }

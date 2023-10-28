@@ -18,14 +18,18 @@ export default function App() {
         <StatusBar backgroundColor={constants.lunar}
                    barStyle="light-content" />
 
-        <View style={styles.carousel}>
+        <ScrollView horizontal={true}>
 
-          <CategoryCard icon={constants.icons.analytics} />
-          <CategoryCard icon={constants.icons.transactions} />
-          {/* <CategoryCard icon={constants.icons.internet} /> */}
-          <CategoryCard icon={constants.icons.electricity} />
+          <View style={styles.carousel}>
 
-        </View>
+            <CategoryCard icon={constants.icons.analytics} />
+            <CategoryCard icon={constants.icons.transactions} />
+            <CategoryCard icon={constants.icons.internet} />
+            <CategoryCard icon={constants.icons.electricity} />
+
+          </View>
+
+        </ScrollView>
 
         <View style={styles.cardSection}>
 
