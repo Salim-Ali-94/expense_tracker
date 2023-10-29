@@ -1,4 +1,4 @@
-import { View, Image } from "react-native";
+import { Pressable, View, Image } from "react-native";
 import { styles } from "./styles";
 
 
@@ -6,16 +6,20 @@ export default function CategoryCard({ icon }) {
 
     return (
 
-        <View style={styles.outline}>
+        <Pressable onPress={() => alert("clicked on card")}>
 
-            <View style={styles.card}>
+            <View style={styles.outline}>
 
-                <Image source={icon}
-                       style={styles.icon} />
+                <View style={styles.card}>
 
+                    <Image source={icon}
+                        style={styles.icon} />
+
+                </View>
+            
             </View>
-        
-        </View>
+
+        </Pressable>
 
     );
 

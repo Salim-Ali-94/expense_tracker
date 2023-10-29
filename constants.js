@@ -20,8 +20,11 @@ export const neon = "#7b00ff";
 export const violet = "#9400d3";
 export const electric = "#8f00ff";
 
-export const colours = [blue, purple, green, orange, pink, red, yellow, peach, indigo, violet, neon, electric];
+// export const colours = [blue, purple, green, orange, pink, red, yellow, peach, indigo, violet, neon, electric];
+export const colours = [blue, purple, green, orange, pink, red, yellow, ocean];
+
 export const icons = { analytics: require("./assets/icons/analytics.png"),
                        transactions: require("./assets/icons/transactions.png"),
                        electricity: require("./assets/icons/electricity.png"),
+                       travel: require("./assets/icons/travel.png"),
                        internet: require("./assets/icons/wifi.png") };

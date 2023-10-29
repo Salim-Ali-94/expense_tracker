@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
 
     cardSection: {
 
-        marginTop: 100,
+        marginTop: 80,
         marginBottom: 20,
         alignItems: "center"
     },
@@ -13,9 +13,10 @@ export const styles = StyleSheet.create({
     carousel: {
 
         flexDirection: "row",
-        width: "115%",
+        width: "107%",
         justifyContent: "space-around",
-        marginTop: 30
+        marginTop: 30,
+        paddingRight: 30
     },
 
     header: {
@@ -25,12 +26,16 @@ export const styles = StyleSheet.create({
         alignItems: "center",
     },
 
+    greetingContainer: {
+
+        width: "80%"
+    },
+
     row: {
 
         flexDirection: "row",
         width: "92%",
-        justifyContent: "space-between",
-        alignItems: "center",
+        justifyContent: "space-between"
     },
 
     greeting: {
@@ -54,6 +59,29 @@ export const styles = StyleSheet.create({
         width: 60,
         height: 60,
         borderRadius: 50
+    },
+
+    objectivesSection: {
+
+        width: "100%",
+        alignItems: "center",
+        marginTop: 10
+    },
+
+    headingContainer: {
+
+        width: "92%",
+        // flexDirection: "row",
+        // justifyContent: "space-between",
+        marginBottom: 20
+    },
+
+    heading: {
+
+        fontFamily: "poppins_medium",
+        // fontFamily: "poppins_bold",
+        color: "#ffffff",
+        fontSize: 26
     }
 
 });
