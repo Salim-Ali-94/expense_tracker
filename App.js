@@ -4,8 +4,9 @@ import GlassCard from "./components/GlassCard";
 import GradientCard from "./components/GradientCard";
 // import DonutChart from "./components/DonutChart";
 import CategoryCard from "./components/CategoryCard";
+// import ProgressIndicator from "./components/ProgressIndicator";
+import RowData from "./components/RowData";
 import { styles } from "./styles";
-import ProgressIndicator from "./components/ProgressIndicator";
 
 
 export default function App() {
@@ -77,13 +78,15 @@ export default function App() {
 
         <View style={{width: "100%", alignItems: "center"}}>
 
-          <View style={{width: "92%"}}>
+          {/* <View style={{width: "92%"}}>
 
             <ProgressIndicator tint={constants.purple}
                                percent={0.6}
                                icon={constants.icons.travel} />
 
-          </View>
+          </View> */}
+
+          <RowData />
 
         </View>
 
