@@ -6,9 +6,9 @@ export const styles = StyleSheet.create({
 
     outline: {
 
-        width: 105,
-        height: 105,
-        borderRadius: 30,
+        width: 107,
+        height: 107,
+        borderRadius: 20,
         backgroundColor: constants.pink,
         justifyContent: "center",
         alignItems: "center"
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         width: 100,
         height: 100,
         backgroundColor: constants.sky,
-        borderRadius: 30,
+        borderRadius: 20,
         alignItems: "center",
         justifyContent: "center"
     },
