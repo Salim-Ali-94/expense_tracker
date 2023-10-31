@@ -4,7 +4,6 @@ import GlassCard from "./components/GlassCard";
 import GradientCard from "./components/GradientCard";
 // import DonutChart from "./components/DonutChart";
 import CategoryCard from "./components/CategoryCard";
-// import ProgressIndicator from "./components/ProgressIndicator";
 import RowData from "./components/RowData";
 import { styles } from "./styles";
 
@@ -77,38 +76,13 @@ export default function App() {
 
           <View style={styles.headingContainer}>
 
-            {/* <Text style={styles.heading}>Objectives</Text> */}
-            <Text style={styles.heading}>Savings</Text>
-            {/* <Text style={styles.heading}>Funds</Text> */}
-            {/* <Text style={styles.heading}>Budget</Text> */}
+            <Text style={styles.heading}>Funds</Text>
 
           </View>
 
         </View>
 
         <View style={{width: "100%", alignItems: "center"}}>
-
-          {/* <View style={{width: "92%"}}>
-
-            <ProgressIndicator tint={constants.purple}
-                               percent={0.6}
-                               icon={constants.icons.travel} />
-
-          </View> */}
-
-          {/* <RowData category={"Travel"}
-                   target={980}
-                   actual={710}
-                   gap={20}
-                   tint={constants.purple}
-                   icon={constants.icons.travel} /> */}
-
-          {/* <RowData category={"Vehicle"}
-                   target={123456}
-                   actual={30000}
-                   gap={0}
-                   tint={constants.blue}
-                   icon={constants.icons.vehicle} /> */}
 
           { data.map((item, index) => <RowData category={item.category}
                                                key={index}

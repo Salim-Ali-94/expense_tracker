@@ -12,3 +12,4 @@ expense tracker app built using react native (cli)
 - linear gradient
 - component positioning + transformation
 - donut chart
+- circular progress indicator

@@ -71,18 +71,13 @@ export const styles = StyleSheet.create({
     headingContainer: {
 
         width: "92%",
-        // flexDirection: "row",
-        // justifyContent: "space-between",
-        // marginBottom: 20
-        marginBottom: 16
+       marginBottom: 16
     },
 
     heading: {
 
         fontFamily: "poppins_medium",
-        // fontFamily: "poppins_bold",
         color: "#ffffff",
-        // fontSize: 26
         fontSize: 24
     }
 
