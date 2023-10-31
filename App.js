@@ -11,6 +11,13 @@ import { styles } from "./styles";
 
 export default function App() {
 
+  const data = [{ category: "Vacation", target: 1000, amount: 800, colour: constants.purple, icon: constants.icons.travel },
+                { category: "Home", target: 1000000, amount: 567890, colour: constants.green, icon: constants.icons.home },
+                { category: "Medical", target: 54321, amount: 23456, colour: constants.ocean, icon: constants.icons.health },
+                { category: "Pension", target: 500000, amount: 350000, colour: constants.orange, icon: constants.icons.retirement },
+                { category: "Emergency", target: 100000, amount: 50000, colour: constants.pink, icon: constants.icons.emergency },
+                { category: "Vehicle", target: 654321, amount: 123456, colour: constants.yellow, icon: constants.icons.vehicle },]
+
   return (
 
     <SafeAreaView style = {{ backgroundColor: constants.lunar, flex: 1 }}>
@@ -70,7 +77,10 @@ export default function App() {
 
           <View style={styles.headingContainer}>
 
-            <Text style={styles.heading}>Objectives</Text>
+            {/* <Text style={styles.heading}>Objectives</Text> */}
+            <Text style={styles.heading}>Savings</Text>
+            {/* <Text style={styles.heading}>Funds</Text> */}
+            {/* <Text style={styles.heading}>Budget</Text> */}
 
           </View>
 
@@ -86,7 +96,27 @@ export default function App() {
 
           </View> */}
 
-          <RowData />
+          {/* <RowData category={"Travel"}
+                   target={980}
+                   actual={710}
+                   gap={20}
+                   tint={constants.purple}
+                   icon={constants.icons.travel} /> */}
+
+          {/* <RowData category={"Vehicle"}
+                   target={123456}
+                   actual={30000}
+                   gap={0}
+                   tint={constants.blue}
+                   icon={constants.icons.vehicle} /> */}
+
+          { data.map((item, index) => <RowData category={item.category}
+                                               key={index}
+                                               target={item.target}
+                                               actual={item.amount}
+                                               gap={(index === data.langth - 1) ? 0 : 20}
+                                               tint={item.colour}
+                                               icon={item.icon} />) }
 
         </View>
 

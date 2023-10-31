@@ -1,34 +1,36 @@
 import { View, Text } from "react-native";
 import ProgressIndicator from "../ProgressIndicator";
-import * as constants from "../../constants";
+// import * as constants from "../../constants";
 import { styles } from "./styles";
 
 
-export default function RowData() {
+export default function RowData({ category, target, actual, icon, tint, gap }) {
 
     return (
 
-        <View style={styles.row}>
+        <View style={[styles.row, { marginBottom: gap }]}>
 
-            <ProgressIndicator tint={constants.purple}
-                               percent={0.6}
-                               icon={constants.icons.travel} />
+            <ProgressIndicator tint={tint}
+                               percent={actual / target}
+                               icon={icon} />
 
 
             <View style={styles.dataSection}>
 
-                <View style={styles.category}>
+                {/* <View style={styles.category}> */}
+                <View>
 
-                    <Text style={styles.heading}>Travel</Text>
-                    <Text style={styles.value}>$860 / $950</Text>
+                    <Text style={styles.heading}>{category}</Text>
+                    {/* <Text style={styles.value}>${actual} / ${target}</Text> */}
+                    <Text style={styles.value}>${target}</Text>
 
                 </View>
                 
-                <View style={styles.percentage}>
+                {/* <View style={styles.percentage}> */}
 
-                    <Text style={styles.progress}>94%</Text>
+                    <Text style={styles.progress}>{parseInt(100*actual / target)}%</Text>
 
-                </View>
+                {/* </View> */}
 
             </View>
 

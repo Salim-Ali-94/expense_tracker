@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import * as constants from "../../constants";
 
 
 export const styles = StyleSheet.create({
@@ -7,6 +8,7 @@ export const styles = StyleSheet.create({
         
         width: "92%",
         flexDirection: "row",
+        alignItems: "center"
         // backgroundColor: "deeppink"
     },
 
@@ -24,25 +26,38 @@ export const styles = StyleSheet.create({
 
     heading: {
         
-        color: "#ffffff",
+        // color: "#ffffff",
+        color: constants.metal,
         fontFamily: "poppins_medium",
-        fontSize: 24
+        fontFamily: "poppins_bold",
+        // fontSize: 24
+        fontSize: 18
     },
 
     value: {
 
         fontFamily: "poppins_regular",
-        fontSize: 18,
-        // fontSize: 16,
-        color: "#ffffff"
+        // fontFamily: "poppins_medium",
+        // fontSize: 18,
+        fontSize: 16,
+        // color: "#ffffff",
+        color: constants.metal,
     },
 
     progress: {
 
-        fontFamily: "poppins_medium",
+        // fontFamily: "poppins_medium",
+        fontFamily: "poppins_regular",
         // fontFamily: "poppins_bold",
-        color: "#ffffff",
-        fontSize: 42
+        // color: "#ffffff",
+        color: constants.metal,
+        // fontSize: 42
+
+        // fontSize: 32
+        // fontSize: 28
+
+        // fontSize: 24
+        fontSize: 20
     }
 
 });

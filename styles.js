@@ -73,7 +73,8 @@ export const styles = StyleSheet.create({
         width: "92%",
         // flexDirection: "row",
         // justifyContent: "space-between",
-        marginBottom: 20
+        // marginBottom: 20
+        marginBottom: 16
     },
 
     heading: {
@@ -81,7 +82,8 @@ export const styles = StyleSheet.create({
         fontFamily: "poppins_medium",
         // fontFamily: "poppins_bold",
         color: "#ffffff",
-        fontSize: 26
+        // fontSize: 26
+        fontSize: 24
     }
 
 });

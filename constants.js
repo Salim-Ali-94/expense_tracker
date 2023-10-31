@@ -2,6 +2,9 @@
 export const granite = "#1e1e1e";
 export const lunar = "#222222";
 export const navy = "#302d43";
+// export const metal = "#71797e";
+// export const metal = "#d3d3d3";
+export const metal = "#ebecf0";
 export const blue = "#6953f7";
 export const sky = "#87cee6";
 export const ocean = "#00bfff";
@@ -26,5 +29,16 @@ export const colours = [blue, purple, green, orange, pink, red, yellow, ocean];
 export const icons = { analytics: require("./assets/icons/analytics.png"),
                        transactions: require("./assets/icons/transactions.png"),
                        electricity: require("./assets/icons/electricity.png"),
-                       travel: require("./assets/icons/travel.png"),
+                    //    travel: require("./assets/icons/travel.png"),
+                       travel: require("./assets/icons/location.png"),
+                    //    vehicle: require("./assets/icons/vehicle.png"),
+                    //    vehicle: require("./assets/icons/vehicle_account.png"),
+                       vehicle: require("./assets/icons/bike.png"),
+                    //    house: require("./assets/icons/house.png"),
+                       house: require("./assets/icons/home_account.png"),
+                    //    home: require("./assets/icons/home.png"),
+                       home: require("./assets/icons/home_account.png"),
+                       health: require("./assets/icons/health.png"),
+                       retirement: require("./assets/icons/retirement.png"),
+                       emergency: require("./assets/icons/emergency.png"),
                        internet: require("./assets/icons/wifi.png") };
