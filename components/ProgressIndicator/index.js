@@ -15,7 +15,7 @@ export default function ProgressIndicator({ tint, icon, percent }) {
                             backgroundColor={"transparent"}
                             startAngle={0}
                             cornerRadius={1}
-                            strokeWidth={3} />
+                            strokeWidth={2.5} />
  
             <Image source={icon}
                    style={styles.imageBox} />
