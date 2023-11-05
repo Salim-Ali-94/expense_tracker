@@ -2,7 +2,6 @@ import { SafeAreaView, Image, Text, View, StatusBar, ScrollView } from "react-na
 import * as constants from "./constants";
 import GlassCard from "./components/GlassCard";
 import GradientCard from "./components/GradientCard";
-// import DonutChart from "./components/DonutChart";
 import CategoryCard from "./components/CategoryCard";
 import RowData from "./components/RowData";
 import { styles } from "./styles";
@@ -69,8 +68,6 @@ export default function App() {
           <GradientCard />
 
         </View>
-
-        {/* <DonutChart data={[40, 90, 27]} /> */}
 
         <View style={styles.objectivesSection}>
 
