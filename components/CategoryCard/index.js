@@ -1,12 +1,15 @@
 import { Pressable, View, Image } from "react-native";
 import { styles } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 
 export default function CategoryCard({ icon }) {
 
+    const navigation = useNavigation();
+
     return (
 
-        <Pressable onPress={() => alert("clicked on card")}>
+        <Pressable onPress={() => navigation.navigate("Analytics")}>
 
             <View style={styles.outline}>
 

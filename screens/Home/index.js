@@ -7,8 +7,6 @@ import RowData from "../../components/RowData";
 import { styles } from "./styles";
 
 
-const Stack = createNativeStackNavigator();
-
 export default function App() {
 
   const data = [{ category: "Vacation", target: 1000, amount: 800, colour: constants.purple, icon: constants.icons.travel },
