@@ -16,9 +16,7 @@ export default function App() {
       <Stack.Navigator>
 
         <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
-        {/* <Stack.Screen name="Analytics" component={Analytics} options={{ headerShown: false }} /> */}
         <Stack.Screen name="Analytics" component={Analytics} options={{ headerTintColor: "#ffffff", headerStyle: { backgroundColor: constants.lunar }, headerTitle: "", headerShadowVisible: false }} />
-        {/* <Stack.Screen name="Analytics" component={Analytics} /> */}
 
       </Stack.Navigator>
 
