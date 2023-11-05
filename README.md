@@ -4,14 +4,15 @@ expense tracker app built using react native (cli)
 
 # progress
 
-home screen
+screenhots of each screen to demonstrate progress
 
-![Screenshot_1699158972](https://github.com/Salim-Ali-94/expense_tracker/assets/75537889/af04f93a-2d69-4cb0-b1c9-d2e1f212bccf)
+# home screen
 
+![home](https://github.com/Salim-Ali-94/expense_tracker/assets/75537889/ee16b458-6a02-48eb-88d9-c6ef9fbd3dfd)
 
-analytics screen
+# analytics screen
 
-![Screenshot_1699158984](https://github.com/Salim-Ali-94/expense_tracker/assets/75537889/9eb99477-b611-46ae-8fee-8f3c91122b02)
+![analytics](https://github.com/Salim-Ali-94/expense_tracker/assets/75537889/704ee475-f916-4320-830f-16a638fd1642)
 
 
 # key concepts
