@@ -4,7 +4,7 @@ expense tracker app built using react native (cli)
 
 # progress
 
-screenhots of each screen to demonstrate progress
+screenshots of each screen to demonstrate progress
 
 # home screen
 
