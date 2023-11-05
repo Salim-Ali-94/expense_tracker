@@ -16,7 +16,7 @@ export default function CategoryCard({ icon }) {
                 <View style={styles.card}>
 
                     <Image source={icon}
-                        style={styles.icon} />
+                           style={styles.icon} />
 
                 </View>
             

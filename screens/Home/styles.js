@@ -16,7 +16,8 @@ export const styles = StyleSheet.create({
         width: "107%",
         justifyContent: "space-around",
         marginTop: 30,
-        paddingRight: 30
+        paddingRight: 30,
+        paddingLeft: 10
     },
 
     header: {
